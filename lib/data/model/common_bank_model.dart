@@ -5,8 +5,8 @@ class CommonBankModel {
   final List<CustomerData>? customerData;
 
   CommonBankModel({
-    this.bankName="",
-    this.branch="",
+    this.bankName = "",
+    this.branch = "",
     this.ifscCode,
     this.customerData,
   });
@@ -26,4 +26,5 @@ class CustomerData {
     this.mobileNumber,
     this.totalBalance,
   });
+  //nnnnnnnnnn
 }
