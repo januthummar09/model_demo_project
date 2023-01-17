@@ -1,5 +1,5 @@
 class CustomerBankList{
-  Map bankData={
+ static Map <String, dynamic>bankData={
     "bank_name":"SBI",
     "branch":"Yogi Chowk",
     "IFSC_code":111111,

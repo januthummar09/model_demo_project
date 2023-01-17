@@ -10,6 +10,14 @@ class CommonBankModel {
     this.ifscCode,
     this.customerData,
   });
+  factory CommonBankModel.fromJson(Map<String, dynamic> json) {
+    return CommonBankModel(
+        bankName: json['bank_name'],
+        branch: json['branch'],
+        ifscCode: json['IFSC_code'],
+        customerData: List<CustomerData>.from(
+            json['customerList'].map((value) => CustomerData.fromJson(value))));
+  }
 }
 
 class CustomerData {
@@ -26,4 +34,13 @@ class CustomerData {
     this.mobileNumber,
     this.totalBalance,
   });
+  factory CustomerData.fromJson(Map<String, dynamic> json) {
+    return CustomerData(
+      customerName: json['customerName'],
+      accountNumber: json['accountNumber'],
+      accountType: json['accountType'],
+      mobileNumber: json['mobileNumber'],
+      totalBalance: json['totalBalance'].toString(),
+    );
+  }
 }
