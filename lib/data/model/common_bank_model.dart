@@ -26,5 +26,4 @@ class CustomerData {
     this.mobileNumber,
     this.totalBalance,
   });
-  //nnnnnnnnnn
 }
