@@ -1,4 +1,3 @@
-
 class CommonModel {
   final String? classTime;
   final String? course;
@@ -11,6 +10,14 @@ class CommonModel {
     this.facultyName = "",
     this.studentList,
   });
+  factory CommonModel.fromJson(Map<String, dynamic> json) {
+    return CommonModel(
+        classTime: json['class_time'],
+        course: json['course'],
+        facultyName: json['faculty_name'],
+        studentList: List<StudentList>.from(
+            json['student_list'].map((value) => StudentList.fromJson(value))));
+  }
 }
 
 class StudentList {
@@ -25,6 +32,12 @@ class StudentList {
     this.idNumber,
     this.age,
   });
+  factory StudentList.fromJson(Map<String, dynamic> json) {
+    return StudentList(
+      name: json['name'],
+      surname: json['surname'],
+      idNumber: json['id-number'],
+      age: json['age'],
+    );
+  }
 }
-
-
