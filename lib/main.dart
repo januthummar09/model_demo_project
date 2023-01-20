@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:model_demo_project/screens/bank_model_data_screen.dart';
 import 'package:model_demo_project/screens/company_model_use.dart';
+import 'package:model_demo_project/screens/person_data_screen.dart';
+import 'package:model_demo_project/screens/rick_data_screen.dart';
 import 'package:model_demo_project/screens/student_model_data_screen.dart';
 
 void main() {
@@ -36,6 +38,14 @@ class _MyAppState extends State<MyApp> {
       title: "CompanyModelUse",
       child: const CompanyModelUse(),
     ),
+    ListItem(
+      title: "PersonDataScreen",
+      child: const PersonDataScreen(),
+    ),
+    ListItem(
+      title: "RickDataScreen",
+      child: const RickDataScreen(),
+    ),
   ];
 
   // This widget is the root of your application.
@@ -47,6 +57,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // home: const RickDataScreen(),
       home: Scaffold(
         appBar: AppBar(),
         body: ListView.builder(

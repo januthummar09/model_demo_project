@@ -1,5 +1,5 @@
 class PersonData {
-  Map<String, dynamic> pesonDetail = {
+  static Map<String, dynamic> personDetail = {
     "person1": {
       "first_name": "Janki",
       "last_name": "Thummar",
@@ -11,11 +11,11 @@ class PersonData {
       },
       "phone_number": [
         {
-          "type1": "home1",
+          "type1": "Persnol",
           "no": 9925859029,
         },
         {
-          "type2": "fex1",
+          "type1": "home",
           "no": 9909357299,
         }
       ],
