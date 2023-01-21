@@ -93,14 +93,19 @@ class _RickDataScreenState extends State<RickDataScreen> {
                               fontSize: 16,
                             ),
                           ),
-                          Text(
-                            "Image  :${item.image}\n",
-                            style: const TextStyle(
-                              fontSize: 16,
-                            ),
+                          Image.network(
+                            "${item.image}",
+                            height: 80,
                           ),
+
+                          // Text(
+                          //   "Image  :${item.image}\n",
+                          //   style: const TextStyle(
+                          //     fontSize: 16,
+                          //   ),
+                          // ),
                           Text(
-                            "Url  :${item.url}\n",
+                            "\nUrl  :${item.url}\n",
                             style: const TextStyle(
                               fontSize: 16,
                             ),
