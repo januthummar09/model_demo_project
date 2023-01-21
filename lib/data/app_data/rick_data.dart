@@ -106,7 +106,7 @@ class RickData {
           "url": "https://rickandmortyapi.com/api/location/3"
         },
         "image": "https://rickandmortyapi.com/api/character/avatar/78.jpeg",
-        "episode": [
+        "episode":[
           "https://rickandmortyapi.com/api/episode/10",
           "https://rickandmortyapi.com/api/episode/28"
         ],

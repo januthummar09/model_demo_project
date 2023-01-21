@@ -21,7 +21,9 @@ class _PersonDataScreenState extends State<PersonDataScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("PersonData Screen"),
+      ),
       body: Column(
         children: [
           Card(
@@ -46,7 +48,7 @@ class _PersonDataScreenState extends State<PersonDataScreen> {
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.red,
+                      color: Colors.blue,
                       child: Column(
                         children: [
                           Text(

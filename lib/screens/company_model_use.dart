@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../data/app_data/company_data.dart';
@@ -24,7 +23,9 @@ class _CompanyModelUseState extends State<CompanyModelUse> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("CompanyModel screen"),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -52,7 +53,6 @@ class _CompanyModelUseState extends State<CompanyModelUse> {
               shrinkWrap: true,
               itemBuilder: (context, index) => Container(
                 color: Colors.yellow,
-                height: 200,
                 width: double.infinity,
                 child: Text("Name:${name[index]}"),
               ),

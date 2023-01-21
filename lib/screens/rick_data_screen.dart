@@ -21,7 +21,9 @@ class _RickDataScreenState extends State<RickDataScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("RickData Screen"),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),

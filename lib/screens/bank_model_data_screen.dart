@@ -21,7 +21,9 @@ class _BankModelDataScreenState extends State<BankModelDataScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("BankModelData Screen"),
+      ),
       body: ListView(
         children: [
           const Text(
@@ -63,7 +65,7 @@ class _BankModelDataScreenState extends State<BankModelDataScreen> {
             itemBuilder: (context, index) => Container(
               padding: const EdgeInsets.all(20),
               width: double.infinity,
-              color: Colors.amber,
+              color: Colors.cyan,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
