@@ -1,4 +1,4 @@
-class MutipleData {
+class MultipleData {
   static Map<String, dynamic> multipleData = {
     "multipleList": [
       {

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:model_demo_project/screens/bank_model_data_screen.dart';
 import 'package:model_demo_project/screens/company_model_use.dart';
+import 'package:model_demo_project/screens/multiple_model_screen.dart';
 import 'package:model_demo_project/screens/person_data_screen.dart';
 import 'package:model_demo_project/screens/rick_data_screen.dart';
 import 'package:model_demo_project/screens/rick_location_data_screen.dart';
@@ -52,8 +53,8 @@ class _MyAppState extends State<MyApp> {
       child: const RickLocationDataScreen(),
     ),
     ListItem(
-      title: "RickDataScreen",
-      child: const RickDataScreen(),
+      title: "MultipleModelScreen",
+      child: const MultipleModelScreen(),
     ),
   ];
 
